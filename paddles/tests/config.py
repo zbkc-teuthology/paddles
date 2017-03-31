@@ -5,7 +5,7 @@ server = {
 }
 
 address = 'http://localhost:%s' % server['port']
-job_log_href_templ = 'http://qa-proxy.ceph.com/teuthology/{run_name}/{job_id}/teuthology.log'  # noqa
+job_log_href_templ = 'http://qa-proxy.zbkc.com/teuthology/{run_name}/{job_id}/teuthology.log'  # noqa
 
 default_latest_runs_count = 20
 

@@ -1,7 +1,7 @@
 paddles
 =======
 A very simple ``JSON`` based API to store and report back on test
-results from Ceph tests.
+results from Zbkc tests.
 
 
 Setup
@@ -12,7 +12,7 @@ To install and use paddles:
 #. Install the following packages (names provided are based on an Ubuntu install): ``git python-dev python-virtualenv postgresql postgresql-contrib postgresql-server-dev-all supervisor``
 #. Install and configure PostgreSQL on your system.
 #. Create a database. Ours is called 'paddles'
-#. Clone the `repository <https://github.com/ceph/paddles.git>`_
+#. Clone the `repository <https://github.com/zbkc/paddles.git>`_
 #. Inside the repository, create a virtualenv: ``virtualenv ./virtualenv``
 #. Create a copy of the configuration template: ``cp config.py.in config.py``
 #. Edit config.py to reflect your hostnames, database info, etc.
@@ -24,7 +24,7 @@ To install and use paddles:
 #. Edit alembic.ini to reflect your database information.
 #. Tell alembic that you have the latest database version: ``alembic stamp head``
 #. To start the server for testing purposes, you may use ``pecan serve config.py`` - though for production use it's wise to use `a real server <http://pecan.readthedocs.org/en/latest/deployment.html>`_. We use `gunicorn <http://gunicorn.org/>`_ managed by `supervisord <http://supervisord.org/>`_. Sample config files are provided for `gunicorn <gunicorn_config.py>`_ and `supervisord <supervisord_paddles.conf>`_.
-#. To get `teuthology <https://github.com/ceph/teuthology/>`_ talking to paddles add a line like this to your ``~/.teuthology.yaml``: ``results_server: http://paddles.example.com/``
+#. To get `teuthology <https://github.com/zbkc/teuthology/>`_ talking to paddles add a line like this to your ``~/.teuthology.yaml``: ``results_server: http://paddles.example.com/``
 
 
 

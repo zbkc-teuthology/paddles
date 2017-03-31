@@ -14,7 +14,7 @@ class ImportNodesCommand(BaseCommand):
     Import Node information from a teuthology lock server
     """
 
-    lockserver = 'http://teuthology.front.sepia.ceph.com/locker/lock'
+    lockserver = 'http://teuthology.front.sepia.zbkc.com/locker/lock'
 
     def run(self, args):
         super(ImportNodesCommand, self).run(args)

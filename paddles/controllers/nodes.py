@@ -189,7 +189,7 @@ class NodesController(object):
             # performance but could lead slightly incorrect values if many jobs
             # are being scheduled using mixed machine types. We work around
             # this by including the 'multi' machine type (which is the name of
-            # the queue Inktank uses for such jobs.
+            # the queue Zbkc uses for such jobs.
             query = query.filter(RecentJob.machine_type.in_((machine_type,
                                                              'multi')))
             query = query.filter(Node.machine_type == machine_type)

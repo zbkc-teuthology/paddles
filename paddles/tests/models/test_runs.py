@@ -92,9 +92,9 @@ class TestRunModel(TestApp):
 
     def test_run_suite_hyphenated(self):
         run_name = \
-            'teuthology-2013-10-22_03:00:02-ceph-deploy-next-testing-basic-plana'  # noqa
+            'teuthology-2013-10-22_03:00:02-zbkc-deploy-next-testing-basic-plana'  # noqa
         new_run = Run(run_name)
-        assert new_run.suite == 'ceph-deploy'
+        assert new_run.suite == 'zbkc-deploy'
 
     def test_run_suite_weird(self):
         run_name = 'teuthology-2013-10-23_00:30:38-rgw-next---basic-saya'
@@ -126,9 +126,9 @@ class TestRunModel(TestApp):
 
     def test_run_hyphenated_suite_and_branch(self):
         run_name = \
-            'teuthology-2013-10-22_03:00:02-ceph-deploy-wip-9999-testing-basic-plana'  # noqa
+            'teuthology-2013-10-22_03:00:02-zbkc-deploy-wip-9999-testing-basic-plana'  # noqa
         new_run = Run(run_name)
-        assert (new_run.suite, new_run.branch) == ('ceph-deploy', 'wip-9999')
+        assert (new_run.suite, new_run.branch) == ('zbkc-deploy', 'wip-9999')
 
     def test_run_status_empty(self):
         run_name = "run_status_empty"

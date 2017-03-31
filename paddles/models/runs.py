@@ -10,14 +10,14 @@ from paddles.models import Base
 from paddles.models.jobs import Job
 
 suite_names = ['big',
-               'ceph-deploy',
+               'zbkc-deploy',
                'clusters',
                'dummy',
                'experimental',
                'fs',
                'hadoop',
                'iozone',
-               'kcephfs',
+               'kzbkcfs',
                'knfs',
                'krbd',
                'marginal',
